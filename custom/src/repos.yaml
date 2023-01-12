@@ -1,0 +1,31 @@
+---
+odoo:
+  defaults:
+    depth: 1000
+  remotes:
+    origin: https://github.com/OCA/OCB.git
+  target: origin ${ODOO_VERSION}
+  merges:
+    - origin ${ODOO_VERSION}
+
+OCA/web:
+  defaults:
+    depth: 1500
+  remotes:
+    origin: https://github.com/OCA/web.git
+  target: origin ${ODOO_VERSION}
+  merges:
+    - origin ${ODOO_VERSION}
+
+OCA/bank-payment:
+  defaults:
+    depth: 2000
+  remotes:
+    origin: https://github.com/OCA/bank-payment.git
+    wpichler: https://github.com/wpichler/bank-payment.git
+    acsone: https://github.com/acsone/bank-payment.git
+  target: origin ${ODOO_VERSION}
+  merges:
+    - origin ${ODOO_VERSION}
+    - wpichler 16.0-mig-account_payment_order
+    - acsone 16.0-mig-account_payment_mode
