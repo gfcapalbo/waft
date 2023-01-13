@@ -28,4 +28,5 @@ OCA/bank-payment:
   merges:
     - origin ${ODOO_VERSION}
     - wpichler 16.0-mig-account_payment_order
+    - wpichler 16.0-mig-account_banking_pain_base
     - acsone 16.0-mig-account_payment_mode
